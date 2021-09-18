@@ -1,21 +1,21 @@
-var SCWorker = require('socketcluster/scworker');
-var fs = require('fs');
-var express = require('express');
-var serveStatic = require('serve-static');
-var path = require('path');
-var dummyData = require('./sc_modules/dummy-data');
-var authentication = require('./sc_modules/authentication');
-var scCrudRethink = require('sc-crud-rethink');
+const SCWorker = require('socketcluster/scworker');
+const fs = require('fs');
+const express = require('express');
+const serveStatic = require('serve-static');
+const path = require('path');
+const dummyData = require('./sc_modules/dummy-data');
+const authentication = require('./sc_modules/authentication');
+const scCrudRethink = require('sc-crud-rethink');
 
 class Worker extends SCWorker {
   run() {
     console.log('   >> Worker PID:', process.pid);
 
-    var httpServer = this.httpServer;
-    var scServer = this.scServer;
+    const httpServer = this.httpServer;
+    const scServer = this.scServer;
 
     // Use ExpressJS to handle serving static HTTP files
-    var app = require('express')();
+    const app = require('express')();
     app.use(serveStatic(path.resolve(__dirname, 'public')));
     httpServer.on('request', app);
 
@@ -24,10 +24,10 @@ class Worker extends SCWorker {
       a specific aspect of the system/business logic.
     */
 
-    var thinky = scCrudRethink.thinky;
-    var type = thinky.type;
+    const thinky = scCrudRethink.thinky;
+    const type = thinky.type;
 
-    var crudOptions = {
+    const crudOptions = {
       defaultPageSize: 5,
       schema: {
         Category: {
@@ -120,7 +120,7 @@ class Worker extends SCWorker {
       next();
     }
 
-    var crud = scCrudRethink.attach(this, crudOptions);
+    const crud = scCrudRethink.attach(this, crudOptions);
     scServer.thinky = crud.thinky;
 
     // Add some dummy data to our store

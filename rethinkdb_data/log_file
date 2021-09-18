@@ -1,0 +1,27 @@
+2021-09-18T21:06:16.886784000 0.013156s notice: Recursively removing directory /Users/khachornchitsongsaen/Projects/FullStack/sc-crud-sample/rethinkdb_data/tmp
+2021-09-18T21:06:16.889775000 0.016151s notice: Initializing directory /Users/khachornchitsongsaen/Projects/FullStack/sc-crud-sample/rethinkdb_data
+2021-09-18T21:06:16.889866000 0.016238s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/khachornchitsongsaen/Projects/FullStack/sc-crud-sample/rethinkdb_data' did not already exist or is empty.)
+2021-09-18T21:06:16.889903000 0.016275s notice: Running rethinkdb 2.4.1 (CLANG 12.0.5 (clang-1205.0.22.9))...
+2021-09-18T21:06:16.894622000 0.020995s notice: Running on Darwin 20.6.0 x86_64
+2021-09-18T21:06:16.894662000 0.021035s notice: Loading data from directory /Users/khachornchitsongsaen/Projects/FullStack/sc-crud-sample/rethinkdb_data
+2021-09-18T21:06:17.081380000 0.207766s info: Automatically using cache size of 4244 MB
+2021-09-18T21:06:17.081943000 0.208329s notice: Listening for intracluster connections on port 29015
+2021-09-18T21:06:17.083303000 0.209690s notice: Listening for client driver connections on port 28015
+2021-09-18T21:06:17.083341000 0.209728s notice: Listening for administrative HTTP connections on port 8080
+2021-09-18T21:06:17.083345000 0.209732s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-09-18T21:06:17.083348000 0.209735s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-09-18T21:06:17.083351000 0.209738s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-09-18T21:06:17.083354000 0.209741s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-09-18T21:06:17.083357000 0.209744s notice: Server ready, "Khachornchits_MacBook_Pro_local_rkq" d53dca5b-cf78-4c4a-b868-6210fc20a87c
+2021-09-18T21:13:32.460166000 435.580982s info: Table 0deb6cb0-f343-4aac-838a-458a650ae44b: Starting a new Raft election for term 1.
+2021-09-18T21:13:32.460411000 435.581228s info: Table 0deb6cb0-f343-4aac-838a-458a650ae44b: Added replica on this server.
+2021-09-18T21:13:32.499278000 435.620094s info: Table 0deb6cb0-f343-4aac-838a-458a650ae44b: This server is Raft leader for term 1. Latest log index is 0.
+2021-09-18T21:21:43.516935000 926.560536s info: Table 452ce451-3786-458e-83b7-b556e1f7072d: Starting a new Raft election for term 1.
+2021-09-18T21:21:43.517270000 926.560870s info: Table 452ce451-3786-458e-83b7-b556e1f7072d: Added replica on this server.
+2021-09-18T21:21:43.518225000 926.561824s info: Table f095313d-c928-4b83-ac11-1c80fdca1a5d: Added replica on this server.
+2021-09-18T21:21:43.518236000 926.561835s info: Table f095313d-c928-4b83-ac11-1c80fdca1a5d: Starting a new Raft election for term 1.
+2021-09-18T21:21:43.556734000 926.600332s info: Table 81126bdc-bbbe-444f-bac7-868d8d51fecb: Starting a new Raft election for term 1.
+2021-09-18T21:21:43.556884000 926.600483s info: Table 81126bdc-bbbe-444f-bac7-868d8d51fecb: Added replica on this server.
+2021-09-18T21:21:43.595212000 926.638809s info: Table 452ce451-3786-458e-83b7-b556e1f7072d: This server is Raft leader for term 1. Latest log index is 0.
+2021-09-18T21:21:43.635109000 926.678705s info: Table f095313d-c928-4b83-ac11-1c80fdca1a5d: This server is Raft leader for term 1. Latest log index is 0.
+2021-09-18T21:21:43.678318000 926.721913s info: Table 81126bdc-bbbe-444f-bac7-868d8d51fecb: This server is Raft leader for term 1. Latest log index is 0.

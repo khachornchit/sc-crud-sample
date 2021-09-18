@@ -2,6 +2,9 @@
   "name": "socketcluster-sample",
   "description": "A sample SocketCluster app",
   "version": "2.0.0",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "contributors": [
     {
       "name": "Jonathan Gros-Dubois",
@@ -13,6 +16,7 @@
     "connect": "^3.6.6",
     "express": "4.16.3",
     "minimist": "1.1.0",
+    "nodemon": "^2.0.12",
     "sc-crud-rethink": "^7.1.0",
     "scc-broker-client": "^6.0.1",
     "serve-static": "1.13.2",

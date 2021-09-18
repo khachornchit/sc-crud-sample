@@ -1,7 +1,7 @@
-var argv = require('minimist')(process.argv.slice(2));
-var SocketCluster = require('socketcluster');
+const argv = require('minimist')(process.argv.slice(2));
+const SocketCluster = require('socketcluster');
 
-var socketCluster = new SocketCluster({
+const socketCluster = new SocketCluster({
   workers: Number(argv.w) || 1,
   brokers: Number(argv.b) || 1,
   port: Number(argv.p) || 8000,
